@@ -218,9 +218,10 @@ function handleClick() {
         this.style.backgroundColor = "black";
         this.style.color = "black";
         order++;
-      } else if (value === 40) {
+      } else if (value === 40 && order === 40) {
         playSound("bell");
         running = value;
+        console.log(value);
         for (i = 0; i < 40; ++i) {
           document.getElementById("block" + i).style.display = "none";
 
@@ -249,7 +250,7 @@ function handleClick() {
         this.style.backgroundColor = "black";
         this.style.color = "black";
         order++;
-      }else if (value === 60) {
+      }else if (value === 60 && order === 60) {
         playSound("bell");
         running = value;
         for (i = 0; i < 20; ++i) {
@@ -289,7 +290,7 @@ function handleClick() {
         this.style.backgroundColor = "black";
         this.style.color = "black";
         order++;
-      }else if (value === 80) {
+      }else if (value === 80 && order ===80) {
         playSound("bell");
         running = value;
         for (i = 0; i < 20; ++i) {
